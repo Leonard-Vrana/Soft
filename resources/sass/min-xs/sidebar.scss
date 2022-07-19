@@ -1,0 +1,65 @@
+#accordionSidebar{
+	background-color: $dark;
+
+	.icon{
+		height: 12px;
+		width: auto;
+		transition: .25s;
+	}
+
+	.nav-item{
+		.nav-link{
+			padding: 12px 22px;
+			color: #fff;
+			opacity: .8;
+			transition: .25s;
+			font-size: 12px!important;
+			font-weight: 700;
+			line-height: 12px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			span{
+				font-size: 12px;
+				line-height: 12px;
+				margin-left: spacer(2);
+			}
+
+			&.toggle{
+				opacity: 1!important;
+			}
+		}
+
+		&.active,&:hover{
+			.nav-link{
+				opacity: 1;
+				transition: .25s;
+			}
+		}
+	}
+
+	.sidebar-heading{
+		font-size: 8px;
+		opacity: .8;
+		color: #fff;
+		font-weight: 700;
+		margin: 8px 0;
+	}
+
+	.sidebar-divider{
+		border-top: 1px solid #fff;
+		opacity: .1;
+		margin: 0!important;
+	}
+
+	#sidebarToggle{
+		width: unset;
+		height: unset;
+		margin-bottom: unset;
+
+		&::after{
+			display: none;
+		}
+	}
+}

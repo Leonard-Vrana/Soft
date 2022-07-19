@@ -1,0 +1,43 @@
+#accordionSidebar{
+	transition: .2s!important;
+
+	.sidebar-brand-icon{
+		display: none;
+	}
+
+	&.toggled{
+		.sidebar-brand-icon{
+			display: block;
+		}
+
+		.nav-link{
+			padding: 12px 10px;
+			flex-direction: column;
+
+			span{
+				margin-left: 0;
+			}
+
+			.icon{
+				margin-bottom: spacer(2);
+			}
+		}
+
+		.toggle{
+			.text{
+				display: none;
+			}
+			.icon{
+				transform: rotate(180deg);
+				transition: .25s;
+				margin-bottom: 0!important;
+			}
+
+			&.logout{
+				.icon{
+					transform: rotate(0);
+				}
+			}
+		}
+	}
+}

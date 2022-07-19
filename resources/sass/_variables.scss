@@ -1,0 +1,44 @@
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1230px
+);
+
+$dark: #222222;
+$red: #ef0b33;
+$gray: #9C9C9C;
+$green: #2BD579;
+$blue: #15678A;
+$yellow: #D6CF40;
+$azure: #159DD6;
+$dark-red: #8A0E22;
+$light-gray: #EBEBEB;
+$bg: #F5F5F5;
+
+$danger: $red;
+$primary: $green;
+$secondary: $dark;
+$tertiary: $azure;
+
+$spacer:1rem;
+$spacers:(
+	6: ($spacer * 6),
+	7: ($spacer * 12),
+	8: ($spacer * 16),
+	9: ($spacer * 24)
+);
+
+@function spacer($size) {
+	@return map-get($spacers, $size);
+}

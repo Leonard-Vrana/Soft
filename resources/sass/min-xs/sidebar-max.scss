@@ -1,0 +1,38 @@
+@media (max-width: map-get($grid-breakpoints, md)) {
+	#sidebarToggle{
+		.text{
+			display: none;
+		}
+
+		.icon{
+			margin-bottom: 0px!important;
+		}
+	}
+
+	.sidebar{
+		.nav-link{
+			display: flex;
+			flex-direction: column!important;
+			align-items: center;
+
+			span{
+				margin-left: 0!important;
+			}
+
+			.icon{
+				transition: .25s;
+				margin-bottom: 5px!important;
+			}
+		}
+	}
+
+	.logout{
+		.text{
+			display: none!important;
+		}
+
+		.icon{
+			margin-bottom: 0px!important;
+		}
+	}
+}
